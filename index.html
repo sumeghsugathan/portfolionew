@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://kit.fontawesome.com/0ca0e97ff6.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <h1>S<span>umegh. </span></h1>
+                    <!-- <img src="images/logo.png" alt="logo" class="logo" /> -->
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>MERN Stack Developer</p>
+                    <h1>Hi, I'm <br /><span>Sumegh</span> Sugathan</h1>
+                </div>
+            </div>
+        </div>
+        <!-- about section -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="" alt="img" />
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>
+                            As a dedicated and ambitious full-stack developer, I am enthusiastic about crafting innovative
+                            and efficient solutions to real-world problems. My journey into the world of technology began
+                            with a profound curiosity that has only grown stronger throughout my career. During my recent
+                            internship, I had the privilege of diving into the MERN stack, honing my skills in MongoDB,
+                            Express, React, and Node.js. Working on diverse projects allowed me to grasp the intricacies of
+                            web development and cultivate a deep appreciation for the harmonious collaboration of front-end
+                            and back-end technologies.
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">SKILLS</p>
+                            <p class="tab-links" onclick="opentab('internship')">INTERNSHIP</p>
+                            <p class="tab-links" onclick="opentab('education')">EDUCATION</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li>
+                                    <span>Web Development</span>
+                                    <br />
+                                    <br />
+                                    React Js <br />Node JS <br />Express JS <br />Mongo DB <br />HTML <br />CSS
+                                    <br />JavaScript
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!--  -->
+                        <div class="tab-contents" id="internship">
+                            <ul>
+                                <li><span>Fullstack Web Development</span><br /><br />Entri App <br />6 months</li>
+                                <li>
+                                    <br />
+                                    <span>Fullstack React Native</span><br /><br />INAMAKES Infotech Kochi <br />3 months
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!--  -->
+
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li>
+                                    <span>Bsc Electronics</span> <br />
+                                    <br />
+                                    College of applied science <br />
+                                    Nadapuram
+                                </li>
+                                <br />
+                                <li>
+                                    <span>Plus Two </span><br />
+                                    <br />Govt Higher Secondary School <br />Valayam
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- services -->
+
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web App Development</h2>
+
+                        <p>
+                            I specialize in building dynamic and responsive web applications from conception to deployment.
+                            Leveraging the MERN stack (MongoDB, Express, React, and Node.js), I create robust and scalable
+                            solutions that meet the unique needs of each project.
+                        </p>
+                        <a href="">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>App Development</h2>
+                        <p>
+                            I am proficient in leveraging the power of React Native to build high-quality, cross-platform
+                            mobile applications. By utilizing a single codebase, I can efficiently develop apps for both iOS
+                            and Android platforms, reducing development time and costs.
+                        </p>
+                        <a href="">Learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-sharp fa-solid fa-crop-simple"></i>
+
+                        <h2>Web Design</h2>
+                        <p>
+                            I have a keen eye for design and an in-depth understanding of front-end technologies like HTML,
+                            CSS, and JavaScript. By combining these skills with modern frameworks like React.js, I create
+                            visually appealing and user-friendly interfaces that engage and delight users.
+                        </p>
+                        <a href="">learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ------------portfolio------------->
+
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png" alt="" />
+                        <div class="layer">
+                            <h3>Todo App</h3>
+                            <p>The app that can create read update and delete user data</p>
+                            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png" alt="" />
+                        <div class="layer">
+                            <h3>E-commerce Web App</h3>
+                            <p>The app that allows user to buy and sell items</p>
+                            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png" alt="" />
+                        <div class="layer">
+                            <h3>Music App</h3>
+                            <p>The app that allows user to listen trending music online</p>
+                            <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+
+        <!-- ------------Contact----------- -->
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>sumegh666@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>+91-7034628506</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/sumegh.sugathan.50"
+                                ><i class="fa-brands fa-facebook-f"></i
+                            ></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                        <a href="images/Sumegh Resume.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required />
+                            <input type="email" name="Email" placeholder="Your Email" required />
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Sumegh Sugathan.</p>
+            </div>
+        </div>
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu() {
+                sidemenu.style.right = "0";
+            }
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+        <script>
+            const scriptURL =
+                "https://script.google.com/macros/s/AKfycbw70OZrFqK65CEuxrTB79NerUDVjXA9KEAFEgWIWu-wDBtBGYAmwHhc_fLkNmO2SIu3wA/exec";
+            const form = document.forms["submit-to-google-sheet"];
+            const msg = document.getElementById("msg");
+
+            form.addEventListener("submit", (e) => {
+                e.preventDefault();
+                fetch(scriptURL, { method: "POST", body: new FormData(form) })
+                    .then((response) => {
+                        msg.innerHTML = "Message sent successfully";
+                        setTimeout(function () {
+                            msg.innerHTML = "";
+                        }, 3000);
+                        form.reset();
+                    })
+                    .catch((error) => console.error("Error!", error.message));
+            });
+        </script>
+    </body>
+</html>
